@@ -13,7 +13,7 @@ import {
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   const menuItems = [
-    { icon: LayoutDashboard, label: 'Dashboard', active: false },
+    { icon: LayoutDashboard, label: 'Dashboard New', active: false },
     { icon: UserCheck, label: 'Role Management', active: false },
     { icon: Users, label: 'User Management', active: false },
     { icon: Bell, label: 'Notifications', active: true },
