@@ -13,13 +13,12 @@ import {
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   const menuItems = [
-    { icon: LayoutDashboard, label: 'Dashboard1', active: false },
+    { icon: LayoutDashboard, label: 'Dashboard', active: false },
     { icon: UserCheck, label: 'Role Management', active: false },
     { icon: Users, label: 'User Management', active: false },
     { icon: Bell, label: 'Notifications', active: true },
     { icon: Settings, label: 'System Settings', active: false },
-    { icon: User, label: 'Profile Management', active: false },
-    { icon: LogOut, label: 'Logout', active: false }
+    { icon: User, label: 'Profile Management', active: false }
   ];
 
   return (
@@ -74,6 +73,17 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             </a>
           ))}
         </nav>
+
+        {/* Logout Button at Bottom */}
+        <div className="p-4 border-t border-slate-700 flex-shrink-0">
+          <a
+            href="#"
+            className="flex items-center gap-3 px-3 py-2 rounded-lg transition-colors text-slate-300 hover:bg-slate-700 hover:text-white"
+          >
+            <LogOut className="w-5 h-5" />
+            <span>Logout</span>
+          </a>
+        </div>
       </div>
     </>
   );
